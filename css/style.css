@@ -505,6 +505,7 @@ a:focus {
   .emoji {
     display: none;
   }
+
 }
 
 
@@ -826,6 +827,12 @@ a:focus {
   }
   .sumarymore_class {
     margin-top: 0px;
+  }
+  .parrafo-services {
+    font-size: 26px;
+    text-align: center;
+    max-width: 85%;
+    margin: 35px auto -165px;
   }
 } 
 /* end abono section */
