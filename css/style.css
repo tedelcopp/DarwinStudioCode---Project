@@ -262,7 +262,8 @@ a:focus {
 }
 
 /*end header section*/
-/* slider section */
+
+/* start slider section */
 .slider_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -360,11 +361,16 @@ a:focus {
   height: 23px;
   background-color: #f8842b;
 }
+/* end slider section */
 
+/* start service section */
 .service_section {
   text-align: center;
 }
-
+.service_list p {
+  font-size: 18px;
+  max-width: 97%;
+}
 .service_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -472,17 +478,47 @@ a:focus {
   transition: all 0.3s;
   border: 1px solid #7335b7;
 }
+.heading_container h1 {
+  margin-top: -30px;
+  margin-bottom: 25px;
+}
 
+.service_list h4 {
+  margin-top: 5px; 
+}
 .service_section .btn-box a:hover {
   color: #ffffff;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
 
+.service_section .heading_container h4,
+.service_section .heading_container b {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .emoji {
+    display: none;
+  }
+}
+
+
+/* end service section */
+
+/* start about section */
 .about_section {
   background-color: #7335b7;
   color: #ffffff;
   border-radius: 250px 0 250px 0;
+}
+.about_component {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .about_section .row {
@@ -521,6 +557,9 @@ a:focus {
           transform: translateY(-3px);
 }
 
+/* end service section */
+
+/* start case section */
 .case_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -564,7 +603,9 @@ a:focus {
 .case_section .box .detail-box a {
   color: #7335b7;
 }
+/* end service section */
 
+/* start client section */
 .client_section .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,7 +688,9 @@ a:focus {
   height: 20px;
   background-color: #f8842b;
 }
+/* end client section */
 
+/* start contact section */
 .contact_section {
   position: relative;
 }
@@ -729,28 +772,45 @@ a:focus {
   border-radius: 350px 0 0 0;
   padding-top: 145px;
 }
+/* end contact section */
 
 /* start abono section */
-.title-margin {
-  margin-bottom: 28px;
-}
 .services-heading {
-  border-bottom: 5px solid #7335B7; /* Cambia el grosor y el color del subrayado según tu preferencia */
-  padding-bottom: 5px; /* Ajusta el espacio entre el texto y el subrayado según sea necesario */
-  margin-bottom: 15px; /* Ajusta el margen inferior del texto según sea necesario */
+  border-bottom: 5px solid #7335B7; 
+  padding-bottom: 5px;
+  margin-bottom: 15px; 
 }
-.abono_heading h2 {
-  margin-top: 15px; /* Ajusta el margen superior según sea necesario */
-  margin-bottom: 30px; /* Ajusta el margen inferior según sea necesario */
+.abono_section .container {
+  max-width: 950px; 
+  margin: 0px auto;
+} 
+
+ .abono_heading h2 {
+  margin-top: 15px; 
+  margin-bottom: 30px;
+} 
+.sumarymore_class {
+  margin-top: 35px;
 }
+.col-md-10 p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 .abono_column ul {
-  list-style: none; /* Oculta las viñetas de la lista */
+  list-style: none; 
 }
-.parrafo-services{
-  font-size: 22px;
-  margin-top: 75px;
-  margin-bottom: -125px;
+.parrafo-services {
+  font-size: 26px;
+  text-align: center;
+  max-width: 65%;
+  margin: 75px auto -125px;
 }
 
 @media (max-width: 768px) {
@@ -759,11 +819,12 @@ a:focus {
     margin-bottom: 25px;
     margin-top: 20px;
   }
-
-  .abono_section p {
-    text-align: center;
+  .col-md-10 p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -20px;
   }
-}
+} 
 /* end abono section */
 
 /* start price-section */
@@ -783,14 +844,28 @@ a:focus {
   padding-bottom: 5px; 
 }
 .btn-primary {
-  background-color: #F89343; /* Color violeta con transparencia */
-  border-color: rgba(138, 43, 226, 0.7); /* Color del borde igual al de fondo */
+  display: inline-block;
+  padding: 12px 15px;
+  background-color: #5a2a8f;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #5a2a8f;
 }
 
 .btn-primary:hover {
-  background-color: #9400d3; /* Color violeta más intenso al pasar el ratón */
-  border-color: #9400d3; /* Color del borde igual al de fondo */
+  color: #ffffff;
+  background-color: #5a2a8f;
+  border: 1px solid #5a2a8f;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
+
+
+
+
+
 /* end price-section */
 
 /* info section */
@@ -939,11 +1014,6 @@ a:focus {
 }
 
 /* end info section */
-
-
-/* start case section*/
-/* end case section*/
-
 
 /* footer section*/
 .footer_section {
