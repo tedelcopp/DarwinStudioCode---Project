@@ -731,21 +731,34 @@ a:focus {
 }
 
 /* start abono section */
-.title-margin {
-  margin-bottom: 28px;
-}
+
 .services-heading {
-  border-bottom: 5px solid #7335B7; /* Cambia el grosor y el color del subrayado según tu preferencia */
-  padding-bottom: 5px; /* Ajusta el espacio entre el texto y el subrayado según sea necesario */
-  margin-bottom: 15px; /* Ajusta el margen inferior del texto según sea necesario */
+  border-bottom: 5px solid #7335B7; 
+  padding-bottom: 5px;
+  margin-bottom: 15px; 
 }
-.abono_heading h2 {
-  margin-top: 15px; /* Ajusta el margen superior según sea necesario */
-  margin-bottom: 30px; /* Ajusta el margen inferior según sea necesario */
+.abono_section .container {
+  max-width: 900px; 
+} 
+
+ .abono_heading h2 {
+  margin-top: 15px; 
+  margin-bottom: 30px;
+} 
+
+.col-md-10 p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
 }
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 .abono_column ul {
-  list-style: none; /* Oculta las viñetas de la lista */
+  list-style: none; 
 }
 .parrafo-services{
   font-size: 22px;
@@ -759,11 +772,13 @@ a:focus {
     margin-bottom: 25px;
     margin-top: 20px;
   }
-
-  .abono_section p {
-    text-align: center;
+  .col-md-10 p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -20px;
   }
-}
+} 
+
 /* end abono section */
 
 /* start price-section */
@@ -783,14 +798,28 @@ a:focus {
   padding-bottom: 5px; 
 }
 .btn-primary {
-  background-color: #F89343; /* Color violeta con transparencia */
-  border-color: rgba(138, 43, 226, 0.7); /* Color del borde igual al de fondo */
+  display: inline-block;
+  padding: 12px 15px;
+  background-color: #5a2a8f;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #5a2a8f;
 }
 
 .btn-primary:hover {
-  background-color: #9400d3; /* Color violeta más intenso al pasar el ratón */
-  border-color: #9400d3; /* Color del borde igual al de fondo */
+  color: #ffffff;
+  background-color: #5a2a8f;
+  border: 1px solid #5a2a8f;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
+
+
+
+
+
 /* end price-section */
 
 /* info section */
@@ -939,11 +968,6 @@ a:focus {
 }
 
 /* end info section */
-
-
-/* start case section*/
-/* end case section*/
-
 
 /* footer section*/
 .footer_section {
