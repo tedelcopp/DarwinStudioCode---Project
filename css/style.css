@@ -373,6 +373,31 @@ a:focus {
 }
 /* end slider section */
 
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366; /* Color oficial de WhatsApp */
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease; /* Agregar transición para un efecto suave */
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+  color: white;
+}
+
+
+
+
 /* start service section */
 .service_section {
   text-align: center;
