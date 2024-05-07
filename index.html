@@ -60,7 +60,7 @@
               </li>
             </ul>
             <div class="quote_btn-container">
-              <a href="" class="quote_btn">
+              <a href="#contact" class="quote_btn">
                Hablemos
               </a>
             </div>
@@ -576,7 +576,7 @@
   <!-- end client section -->
 
   <!-- start contact section -->
-  <section class="contact_section layout_padding">
+  <section id="contact"  class="contact_section layout_padding">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5 col-lg-4 offset-md-1">
@@ -729,7 +729,20 @@
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
-
+<!-- smooth scroll js -->
+<script>
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+  });
+</script>
 </body>
 
 </html>
