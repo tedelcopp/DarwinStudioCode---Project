@@ -50,13 +50,13 @@
                 <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Nosotros</a>
+                <a class="nav-link" href="#aboutus">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Servicios</a>
+                <a class="nav-link" href="#services">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
+                <a class="nav-link" href="#projects">Proyectos</a>
               </li>
             </ul>
             <div class="quote_btn-container">
@@ -165,7 +165,7 @@
   </div>
   
   <!-- service section -->
-  <section class="service_section layout_padding">
+  <section id="services" class="service_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h1 class="services-heading">Nuestros servicios</h1>
@@ -360,7 +360,7 @@
  <!-- end items-price section -->
 
   <!-- about section -->
-  <section class="about_section layout_padding">
+  <section id="aboutus" class="about_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -396,7 +396,7 @@
   <!-- end about section -->
 
   <!-- start case section -->
-  <section class="case_section layout_padding">
+  <section id="projects" class="case_section layout_padding">
     <div class="container">
       <div class="heading_container text-center">
         <h3>Clientes</h3>
@@ -743,6 +743,14 @@
     });
   });
 </script>
+<script>
+  $(document).ready(function(){
+    $('.navbar-nav .nav-link').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+  });
+</script>
+
 </body>
 
 </html>
