@@ -270,7 +270,11 @@ a:focus {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
-
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
 /*end header section*/
 
 /* start slider section */
