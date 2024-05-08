@@ -750,6 +750,22 @@
     });
   });
 </script>
+<script>
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        var headerHeight = $('.navbar').outerHeight();
+        var additionalOffset = -47; 
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top - headerHeight - additionalOffset 
+        }, 1000);
+      }
+    });
+  });
+</script>
+
 
 </body>
 
