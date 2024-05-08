@@ -268,7 +268,7 @@ a:focus {
 .quote_btn-container .quote_btn:hover {
   color: #ffffff;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 @media (min-width: 768px) {
   .mobile-only {
@@ -278,6 +278,11 @@ a:focus {
 /*end header section*/
 
 /* start slider section */
+.carousel-item {
+  height: 400px; 
+  overflow: hidden; 
+}
+
 .slider_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -369,7 +374,6 @@ a:focus {
   border-radius: 100%;
   opacity: 1;
 }
-
 .slider_section .carousel-indicators li.active {
   width: 23px;
   height: 23px;
@@ -607,7 +611,11 @@ a:focus {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-
+.title-clients{
+  border-bottom: 5px solid #7335B7; 
+  padding-bottom: 5px;
+  margin-bottom: 15px; 
+}
 .case_section .box {
   margin-top: 45px;
   background-color: #ffffff;
@@ -684,6 +692,12 @@ a:focus {
   text-transform: uppercase;
 }
 
+.title-testimonial{
+  border-bottom: 5px solid #7335B7; 
+  padding-bottom: 5px;
+  margin-bottom: 15px; 
+}
+
 .client_section .box .client_info i {
   font-size: 24px;
 }
@@ -733,6 +747,12 @@ a:focus {
 
 .contact_section form {
   margin-top: 20px;
+}
+
+.title-talk{
+  border-bottom: 5px solid #7335B7; 
+  padding-bottom: 5px;
+  margin-bottom: 15px; 
 }
 
 .contact_section input {
