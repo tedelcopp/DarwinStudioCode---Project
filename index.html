@@ -608,7 +608,7 @@
               </p>
               
             </div>
-            <form id="contactForm" action="">
+            <form id="contactForm" action="" novalidate>
               <div>
                 <input type="text" id="nombre" placeholder="Nombre" />
               </div>
@@ -776,6 +776,7 @@
   });
 </script>
 
+<!-- Form EmailJs -->
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <script>
@@ -796,38 +797,100 @@
       descripcion: document.getElementById('descripcion').value.trim()
     };
 
+    var valid = true;
+    var emptyFields = [];
+
+    // Validación de campos vacíos y cambio de color de borde
     for (var key in formData) {
         if (formData.hasOwnProperty(key) && formData[key] === '') {
-            Toastify({
-                text: 'Por favor, complete todos los campos del formulario.',
-                backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
-            }).showToast();
-            return; 
+            valid = false;
+            emptyFields.push(key);
         }
     }
 
+    if (!valid) {
+        Toastify({
+            text: 'Complete todos los campos del formulario.',
+            position: 'center',
+            backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
+        }).showToast();
+
+        // Cambiar color de borde a rojo para los campos vacíos
+        emptyFields.forEach(function(field) {
+            document.getElementById(field).style.borderColor = '#f44336';
+        });
+        return;
+    }
+
+    // Validación de correo electrónico usando expresión regular
+    var emailInput = document.getElementById('email');
+    var emailValue = emailInput.value.trim();
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailValue)) {
+        Toastify({
+            text: 'Ingrese una dirección de correo electrónico válida.',
+            position: 'center',
+            backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
+        }).showToast();
+        emailInput.style.borderColor = '#f44336';
+        return;
+    }
+
+    // Validación de teléfono usando expresión regular
+    var telefonoInput = document.getElementById('telefono');
+    var telefonoValue = telefonoInput.value.trim();
+    var telefonoPattern = /^\d{8,}$/;
+
+    if (!telefonoPattern.test(telefonoValue)) {
+        Toastify({
+            text: 'Ingrese un número de teléfono válido.',
+            position: 'center',
+            backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
+        }).showToast();
+        telefonoInput.style.borderColor = '#f44336';
+        return;
+    }
+
+    // Cambiar color de borde a verde para todos los campos si todas las validaciones son exitosas
+    document.querySelectorAll('input').forEach(function(input) {
+        input.style.borderColor = '#4caf50'; // Verde
+    });
+
+    // Si todos los campos están completos y las validaciones son exitosas, procede con el envío del formulario
     emailjs.send('service_iprkv9e', 'template_lnb9p1q', formData)
       .then(function(response) {
         console.log('¡Correo enviado con éxito!', response);
         Toastify({
-    text: '¡Correo enviado con éxito!',
-    position: 'center',
-    style: {
-        background: 'linear-gradient(to right, #00b09b, #96c93d)',
-    },
-}).showToast();
+          text: '¡Correo enviado con éxito!',
+          position: 'center',
+          style: {
+            background: 'linear-gradient(to right, #00b09b, #96c93d)',
+          },
+        }).showToast();
+        // Restablecer estilos después del envío
+        for (var key in formData) {
+          document.getElementById(key).style.borderColor = ''; // Restablecer a su estilo original
+        }
+        document.getElementById('contactForm').reset(); // Restablecer el formulario
       }, function(error) {
         console.log('Error al enviar el correo:', error);
         Toastify({
-    text: 'Por favor, complete todos los campos del formulario.',
-    position: 'center',
-    style: {
-        backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
-    },
-}).showToast();
+          text: 'Error al enviar el correo.',
+          position: 'center',
+          style: {
+            backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
+          },
+        }).showToast();
       });
-});
-</script> 
+  });
+  // Agregar evento de escucha para cambiar el borde a negro cuando se comienza a escribir en el campo
+  document.querySelectorAll('input').forEach(function(input) {
+    input.addEventListener('input', function() {
+      this.style.borderColor = ''; // Restablecer a su estilo original (negro)
+    });
+  });
+</script>
 
 </body>
 
