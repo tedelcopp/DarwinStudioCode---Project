@@ -279,8 +279,7 @@ a:focus {
 
 /* start slider section */
 .carousel-item {
-  height: 400px; 
-  overflow: hidden; 
+  min-height: 400px; /* Ajusta la altura mínima según tus necesidades */
 }
 
 .slider_section {
