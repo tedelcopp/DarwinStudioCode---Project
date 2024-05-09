@@ -24,6 +24,11 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+
 </head>
 
 <body>
@@ -733,6 +738,7 @@
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+
 <!-- smooth scroll js -->
 <script>
   $(document).ready(function(){
@@ -792,7 +798,10 @@
 
     for (var key in formData) {
         if (formData.hasOwnProperty(key) && formData[key] === '') {
-            alert('Por favor, complete todos los campos del formulario.');
+            Toastify({
+                text: 'Por favor, complete todos los campos del formulario.',
+                backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
+            }).showToast();
             return; 
         }
     }
@@ -800,13 +809,25 @@
     emailjs.send('service_iprkv9e', 'template_lnb9p1q', formData)
       .then(function(response) {
         console.log('¡Correo enviado con éxito!', response);
-        alert('¡Correo enviado con éxito!');
+        Toastify({
+    text: '¡Correo enviado con éxito!',
+    position: 'center',
+    style: {
+        background: 'linear-gradient(to right, #00b09b, #96c93d)',
+    },
+}).showToast();
       }, function(error) {
         console.log('Error al enviar el correo:', error);
-        alert('Error al enviar el correo: ' + error);
+        Toastify({
+    text: 'Por favor, complete todos los campos del formulario.',
+    position: 'center',
+    style: {
+        backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
+    },
+}).showToast();
       });
 });
-</script>
+</script> 
 
 </body>
 
