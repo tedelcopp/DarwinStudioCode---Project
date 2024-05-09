@@ -279,9 +279,14 @@ a:focus {
 
 /* start slider section */
 .carousel-item {
-  min-height: 400px; /* Ajusta la altura mínima según tus necesidades */
+  height: 455px; 
 }
 
+@media (max-width: 768px) {
+  .carousel-item {
+      height: 455px; 
+  }
+}
 .slider_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
