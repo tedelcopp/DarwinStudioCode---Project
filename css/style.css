@@ -318,11 +318,16 @@ a:focus {
 .slider_section .detail-box {
   text-align: center;
   color: #ffffff;
+  padding: 0 20px; /* Agrega un poco de espaciado lateral */
 }
 
 .slider_section .detail-box h1 {
   font-weight: bold;
   margin-bottom: 20px;
+  font-size: 36px; /* Aumenta el tamaño del título */
+}
+.slider_section .detail-box p {
+  font-size: 18px; /* Aumenta el tamaño del texto descriptivo */
 }
 
 .slider_section .detail-box .btn-box {
@@ -361,6 +366,7 @@ a:focus {
 
 .slider_section .img-box img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .slider_section .carousel-indicators {
