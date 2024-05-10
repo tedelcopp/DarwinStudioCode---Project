@@ -409,6 +409,13 @@ a:focus {
   transform: scale(1.1); 
   color: white;
 }
+@media (max-width: 767px) {
+  .whatsapp-btn {
+    height: 50px; 
+    line-height: 50px; 
+    bottom: 90px; 
+  }
+}
 /* End WhatsApp Button */
 
 /* Start Service Section */
