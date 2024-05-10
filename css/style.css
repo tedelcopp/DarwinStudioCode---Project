@@ -3,6 +3,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  user-select: none;
+  -webkit-user-select: none; 
 }
 html, body {
   overflow-x: hidden;
