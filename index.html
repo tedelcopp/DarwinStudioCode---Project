@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <!-- Basic -->
+  <!-- basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
+  <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
+  <!-- site metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -16,6 +16,8 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -718,7 +720,7 @@
 </section>
 
     <!-- end info section -->
-
+ 
     <!-- footer section -->
     <footer class="footer_section">
       <div class="container">
@@ -888,6 +890,22 @@
   document.querySelectorAll('input').forEach(function(input) {
     input.addEventListener('input', function() {
       this.style.borderColor = ''; // Restablecer a su estilo original (negro)
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Obtener el botón de regreso al inicio
+    var backToTopButton = document.querySelector(".back-to-top");
+
+    // Agregar evento de clic al botón
+    backToTopButton.addEventListener("click", function(e) {
+      e.preventDefault();
+      // Desplazarse suavemente hacia arriba
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
   });
 </script>

@@ -3,6 +3,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+}
+html, body {
   overflow-x: hidden;
 }
 
@@ -90,7 +92,7 @@ a:focus {
           box-shadow: none;
 }
 
-/*header section*/
+/* Start Header Section */
 .hero_area {
   position: relative;
   min-height: 100vh;
@@ -275,9 +277,9 @@ a:focus {
     display: none;
   }
 }
-/*end header section*/
+/*End Header Section*/
 
-/* start slider section */
+/* Start Slider Section */
 .carousel-item {
   height: 455px; 
 }
@@ -383,13 +385,14 @@ a:focus {
   height: 23px;
   background-color: #f8842b;
 }
-/* end slider section */
+/* End Slider Section */
 
+/* Start WhatsApp Button */
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366; /* Color oficial de WhatsApp */
+  background-color: #25d366; 
   color: white;
   width: 60px;
   height: 60px;
@@ -399,18 +402,16 @@ a:focus {
   font-size: 24px;
   z-index: 9999;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease; /* Agregar transición para un efecto suave */
+  transition: background-color 0.3s ease; 
 }
 
 .whatsapp-btn:hover {
-  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+  transform: scale(1.1); 
   color: white;
 }
+/* End WhatsApp Button */
 
-
-
-
-/* start service section */
+/* Start Service Section */
 .service_section {
   text-align: center;
 }
