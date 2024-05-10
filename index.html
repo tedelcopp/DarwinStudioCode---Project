@@ -2,40 +2,31 @@
 <html lang="en">
 
 <head>
-  <!-- basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- site metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
 
   <title>Darwin Digital Studio</title>
 
-  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  
-
 </head>
 
 <body>
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- Start Header Section-Navbar -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -78,9 +69,9 @@
         </nav>
       </div>
     </header>
-    <!-- end header section -->
+    <!-- End Header-Section -->
     
-    <!-- slider section -->
+    <!-- Start Slider-Section -->
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -171,10 +162,10 @@
       </div>
 
     </section>
-    <!-- end slider section -->
+    <!-- End Slider-Section -->
   </div>
   
-  <!-- service section -->
+  <!-- Start Service-Section -->
   <section id="services" class="service_section layout_padding">
     <div class="container">
       <div class="heading_container">
@@ -282,9 +273,9 @@
       </p>
     </div>
   </section>
-  <!-- end service section -->
+  <!-- End Service-Section -->
   
-  <!-- start abono section -->
+  <!-- Start Abono-Section -->
   <section class="abono_section layout_padding d-flex justify-content-center">
     <div class="container text-center">
         <div class="row">
@@ -323,9 +314,9 @@
         </div>
     </div>
 </section> 
-    <!-- end abono section -->
+    <!-- End Abono-Section -->
 
-  <!-- start items-price section -->
+  <!-- Start Price-Section -->
   <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -367,9 +358,9 @@
         </div>
     </div>
 </div>
- <!-- end items-price section -->
+ <!-- End Price-Section -->
 
-  <!-- about section -->
+  <!-- Start About-Section -->
   <section id="aboutus" class="about_section layout_padding">
     <div class="container">
       <div class="row">
@@ -402,10 +393,9 @@
       </div>
     </div>
   </section>
-  
-  <!-- end about section -->
+  <!-- End About-Section -->
 
-  <!-- start case section -->
+  <!-- Start Case Section -->
   <section id="projects" class="case_section layout_padding">
     <div class="container">
       <div class="heading_container text-center">
@@ -484,9 +474,9 @@
       </div>
     </div>
   </section>
-  <!-- end case section -->
+  <!-- End Case-Section -->
 
-  <!-- start client section -->
+  <!-- Start Client-Section -->
   <section class="client_section ">
     <div class="container">
       <div class="heading_container heading_center">
@@ -584,9 +574,9 @@
       </ol>
     </div>
   </section>
-  <!-- end client section -->
+  <!-- End Client-Section -->
 
-  <!-- start contact section -->
+  <!-- Start Contact-Section -->
   <section id="contact"  class="contact_section layout_padding">
     <div class="container-fluid">
       <div class="row">
@@ -644,11 +634,11 @@
       </div>
     </div>
   </section>
-  <!-- end contact section -->
+  <!-- End Contact-Section -->
 
  <div class="footer_container">
 
-  <!-- start info section -->
+  <!-- Start Info-Section -->
     <section class="info_section ">
     <div class="container">
         <div class="row">
@@ -718,10 +708,9 @@
         </div>
     </div>
 </section>
-
-    <!-- end info section -->
+    <!-- End Info-Section -->
  
-    <!-- footer section -->
+    <!-- Start Footer-Section -->
     <footer class="footer_section">
       <div class="container">
         <p>
@@ -729,19 +718,16 @@
         </p>
       </div>
     </footer>
-    <!-- footer section -->
+    <!-- End Footer-Section -->
   </div>
 
-  <!-- jQery -->
+  <!-- Scripts jQery | JS | Bootstrap JS | Smooth Scrool JS | EmailJS -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
-  <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
 
-<!-- smooth scroll js -->
 <script>
   $(document).ready(function(){
     $('a[href^="#"]').on('click', function(event) {
@@ -778,7 +764,7 @@
   });
 </script>
 
-<!-- Form EmailJs -->
+<!-- Start Script EmailJs -->
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <script>
@@ -802,7 +788,6 @@
     var valid = true;
     var emptyFields = [];
 
-    // Validación de campos vacíos y cambio de color de borde
     for (var key in formData) {
         if (formData.hasOwnProperty(key) && formData[key] === '') {
             valid = false;
@@ -817,14 +802,12 @@
             backgroundColor: 'linear-gradient(to right, #ff416c, #ff4b2b)',
         }).showToast();
 
-        // Cambiar color de borde a rojo para los campos vacíos
         emptyFields.forEach(function(field) {
             document.getElementById(field).style.borderColor = '#f44336';
         });
         return;
     }
 
-    // Validación de correo electrónico usando expresión regular
     var emailInput = document.getElementById('email');
     var emailValue = emailInput.value.trim();
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -839,7 +822,6 @@
         return;
     }
 
-    // Validación de teléfono usando expresión regular
     var telefonoInput = document.getElementById('telefono');
     var telefonoValue = telefonoInput.value.trim();
     var telefonoPattern = /^\d{8,}$/;
@@ -854,12 +836,10 @@
         return;
     }
 
-    // Cambiar color de borde a verde para todos los campos si todas las validaciones son exitosas
     document.querySelectorAll('input').forEach(function(input) {
         input.style.borderColor = '#4caf50'; // Verde
     });
 
-    // Si todos los campos están completos y las validaciones son exitosas, procede con el envío del formulario
     emailjs.send('service_iprkv9e', 'template_lnb9p1q', formData)
       .then(function(response) {
         console.log('¡Correo enviado con éxito!', response);
@@ -870,11 +850,11 @@
             background: 'linear-gradient(to right, #00b09b, #96c93d)',
           },
         }).showToast();
-        // Restablecer estilos después del envío
+
         for (var key in formData) {
-          document.getElementById(key).style.borderColor = ''; // Restablecer a su estilo original
+          document.getElementById(key).style.borderColor = ''; 
         }
-        document.getElementById('contactForm').reset(); // Restablecer el formulario
+        document.getElementById('contactForm').reset(); 
       }, function(error) {
         console.log('Error al enviar el correo:', error);
         Toastify({
@@ -886,22 +866,19 @@
         }).showToast();
       });
   });
-  // Agregar evento de escucha para cambiar el borde a negro cuando se comienza a escribir en el campo
+
   document.querySelectorAll('input').forEach(function(input) {
     input.addEventListener('input', function() {
-      this.style.borderColor = ''; // Restablecer a su estilo original (negro)
+      this.style.borderColor = ''; 
     });
   });
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Obtener el botón de regreso al inicio
     var backToTopButton = document.querySelector(".back-to-top");
 
-    // Agregar evento de clic al botón
     backToTopButton.addEventListener("click", function(e) {
       e.preventDefault();
-      // Desplazarse suavemente hacia arriba
       window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -909,6 +886,7 @@
     });
   });
 </script>
+<!-- End Script EmailJs -->
 
 </body>
 
