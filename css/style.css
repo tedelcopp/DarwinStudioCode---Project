@@ -412,8 +412,9 @@ a:focus {
 @media (max-width: 767px) {
   .whatsapp-btn {
     height: 55px; 
-    line-height: 54px; 
+    line-height: 55px; /* Ajustado para que coincida con la altura del botón */
     bottom: 90px; 
+    border-radius: 50%; /* Asegura que el botón tenga una forma circular */
   }
 }
 /* End WhatsApp Button */
