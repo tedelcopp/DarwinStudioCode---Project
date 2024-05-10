@@ -430,7 +430,36 @@ a:focus {
 /* End Responsive Slider-Section */
 /* End Slider-Section */
 
-/* Start WhatsApp Button */
+/* Start WhatsApp and GoToTop Button */
+#goToTopBtn {
+  position: fixed;
+  bottom: 90px; 
+  right: 20px; 
+  z-index: 9999;
+}
+
+#goToTopBtn a {
+  background-color: #7335B7; 
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+}
+
+#goToTopBtn a i {
+  margin-top: 13px; 
+}
+
+#goToTopBtn:hover {
+  transform: scale(1.1); 
+  color: white;
+}
+
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
@@ -452,18 +481,37 @@ a:focus {
   transform: scale(1.1); 
   color: white;
 }
-
-/* Start Responsive WhatsApp Button */
+/* Start Responsive WhatsApp and GoToTop Button */
 @media (max-width: 767px) {
   .whatsapp-btn {
-    height: 55px; 
+    background-color: #25d366;
+    color: white; 
+    font-size: 20px; 
+    width: 50px; 
+    height: 50px; 
+    line-height: 50px; 
+    bottom: 70px; 
+  }
+  .whatsapp-btn:active {
+    background-color: #25d366; 
+  }
+  #goToTopBtn a {
+    background-color: #7335B7;
+    color: white; 
+    font-size: 20px; 
+    width: 50px; 
+    height: 50px; 
+    line-height: 50px; 
+  }
+  #goToTopBtn {
     line-height: 55px;
-    bottom: 90px; 
+    bottom: 125px; 
     border-radius: 50%; 
+    right: 20px;
   }
 }
-/* End Responsive WhatsApp Button */
-/* End WhatsApp Button */
+/* End Responsive WhatsApp and GoToTop Button */
+/* End WhatsApp and GoToTop Button */
 
 /* Start Service-Section */
 .service_section {

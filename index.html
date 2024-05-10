@@ -27,16 +27,13 @@
 <body>
   <div class="hero_area">
     <!-- Start Header Section-Navbar -->
-    <header class="header_section">
+    <header id="header" class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
               Darwin Digital Studio
             </span>
-          </a>
-          <a href="https://walink.co/e72b6f" class="whatsapp-btn" target="_blank">
-            <i class="fa fa-whatsapp"></i>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
@@ -62,7 +59,7 @@
             </ul>
             <div class="quote_btn-container">
               <a href="#contact" class="quote_btn">
-               Hablemos
+                Hablemos
               </a>
             </div>
           </div>
@@ -70,6 +67,17 @@
       </div>
     </header>
     <!-- End Header-Section -->
+    
+    <!-- Start WhatsApp&GoToTop Button -->
+    <div id="goToTopBtn">
+      <a href="#header">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+    <a href="https://walink.co/e72b6f" class="whatsapp-btn" target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+   <!-- End WhatsApp&GoToTop Button -->
     
     <!-- Start Slider-Section -->
     <section class="slider_section ">
@@ -748,6 +756,7 @@
     });
   });
 </script>
+
 <script>
   $(document).ready(function(){
     $('a[href^="#"]').on('click', function(event) {
