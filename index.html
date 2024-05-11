@@ -884,16 +884,17 @@
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    var backToTopButton = document.querySelector(".back-to-top");
+      var goToTopBtn = document.getElementById("goToTopBtn");
 
-    backToTopButton.addEventListener("click", function(e) {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+      goToTopBtn.addEventListener("click", function(e) {
+          e.preventDefault();
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
       });
-    });
   });
+</script>
 </script>
 <!-- End Script EmailJs -->
 
