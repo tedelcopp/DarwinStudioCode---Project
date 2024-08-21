@@ -57,7 +57,7 @@ html, body {
 }
 
 .heading_container h2 span {
-  color: #7335b7;
+  color: #842096;
 }
 
 .heading_container.heading_center {
@@ -102,7 +102,8 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #7335b7;
+          background: rgb(163,5,98);
+          background: linear-gradient(0deg, rgba(163,5,98,1) 0%, rgba(117,45,175,1) 100%);
   border-radius: 0 0 350px 0;
 }
 
@@ -258,12 +259,12 @@ a:focus {
 .quote_btn-container .quote_btn {
   display: inline-block;
   padding: 5px 25px;
-  background-color: #f8842b;
+  background-color: #FFA500;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #f8842b;
+  border: 1px solid #FFA500;
 }
 
 .quote_btn-container .quote_btn:hover {
@@ -389,7 +390,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 23px;
   height: 23px;
-  background-color: #f8842b;
+  background-color: #CC5500;
 }
 /* Start Responsive Slider-Section */
 @media (max-width: 768px) {
@@ -439,7 +440,7 @@ a:focus {
 }
 
 #goToTopBtn a {
-  background-color: #7335B7; 
+  background-color: #842096; 
   color: #ffffff;
   width: 60px;
   height: 60px;
@@ -464,7 +465,7 @@ a:focus {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366; 
+  background-color: #128C7E; 
   color: white;
   width: 60px;
   height: 60px;
@@ -484,7 +485,7 @@ a:focus {
 /* Start Responsive WhatsApp and GoToTop Button */
 @media (max-width: 767px) {
   .whatsapp-btn {
-    background-color: #25d366;
+    background-color: #128C7E; 
     color: white; 
     font-size: 20px; 
     width: 50px; 
@@ -493,10 +494,10 @@ a:focus {
     bottom: 70px; 
   }
   .whatsapp-btn:active {
-    background-color: #25d366; 
+    background-color: #128C7E; 
   }
   #goToTopBtn a {
-    background-color: #7335B7;
+    background-color: #842096; 
     color: white; 
     font-size: 20px; 
     width: 50px; 
@@ -601,7 +602,8 @@ a:focus {
 .service_section .box:hover::before {
   -webkit-transform: scale(5);
           transform: scale(5);
-  background-color: #7335b7;
+          background: rgb(163,5,98);
+          background: linear-gradient(0deg, rgba(163,5,98,1) 0%, rgba(117,45,175,1) 100%);
 }
 
 .service_section .box:hover img {
@@ -662,7 +664,8 @@ a:focus {
 
 /* Start About-Section */
 .about_section {
-  background-color: #7335b7;
+  background: rgb(163,5,98);
+  background: linear-gradient(0deg, rgba(163,5,98,1) 0%, rgba(117,45,175,1) 100%);
   color: #ffffff;
   border-radius: 250px 0 250px 0;
   margin-top: 30px;
@@ -722,7 +725,7 @@ a:focus {
           transform: translateX(-50%);
 }
 .title-clients{
-  border-bottom: 5px solid #7335B7; 
+  border-bottom: 5px solid #842096; 
   padding-bottom: 5px;
   margin-bottom: 15px; 
 }
@@ -825,8 +828,11 @@ a:focus {
 }
 
 .client_section .carousel-indicators {
-  position: unset;
+  position: relative; /* Cambiado a relativo */
+  z-index: 10; /* Asegura que los indicadores estén sobre otros elementos */
   margin: 0;
+  margin-bottom: -95px; /* Ajusta este valor según el espacio que desees */
+  top: -115px; /* Ajusta la posición en lugar de usar margin-top */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -834,6 +840,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
+
 
 .client_section .carousel-indicators li {
   background-color: #7335b7;
@@ -850,6 +857,42 @@ a:focus {
 }
 /* End Client-Section */
 
+/* Start Responsive Client-Section */
+@media (max-width: 768px) {
+  .client_section .carousel-indicators {
+    top: -80px; 
+    margin: 0;
+    z-index: 10;
+  }
+
+  .client_section .carousel-indicators li {
+    width: 8px;  
+    height: 8px;
+  }
+
+  .client_section .carousel-indicators li.active {
+    width: 16px; 
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client_section .carousel-indicators {
+    top: -60px; 
+  }
+
+  .client_section .carousel-indicators li {
+    width: 6px; 
+    height: 6px;
+  }
+
+  .client_section .carousel-indicators li.active {
+    width: 12px;
+    height: 12px;
+  }
+}
+/* End Responsive Client-Section */
+
 /* Start Contact-Section */
 .contact_section {
   position: relative;
@@ -860,7 +903,7 @@ a:focus {
 }
 
 .title-talk{
-  border-bottom: 5px solid #7335B7; 
+  border-bottom: 5px solid #842096; 
   padding-bottom: 5px;
   margin-bottom: 15px; 
 }
@@ -882,7 +925,7 @@ a:focus {
   background-color: transparent;
   outline: none;
   color: #000000;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #842096;
 }
 
 .contact_section input::-webkit-input-placeholder {
@@ -909,12 +952,12 @@ a:focus {
   font-family: "Poppins", sans-serif;
   display: inline-block;
   padding: 10px 65px;
-  background-color: #7335b7;
+  background-color: #842096;
   color: #ffffff;
   border-radius: 3px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #7335b7;
+  border: 1px solid #842096;
   color: #fff;
   margin-top: 10px;
 }
@@ -941,7 +984,8 @@ a:focus {
 }
 
 .footer_container {
-  background-color: #7335b7;
+  background: rgb(163,5,98);
+  background: linear-gradient(0deg, rgba(163,5,98,1) 0%, rgba(117,45,175,1) 100%);
   color: #ffffff;
   border-radius: 350px 0 0 0;
   padding-top: 145px;
@@ -950,7 +994,7 @@ a:focus {
 
 /* Start Abono-Section */
 .services-heading {
-  border-bottom: 5px solid #7335B7; 
+  border-bottom: 5px solid #842096; 
   padding-bottom: 5px;
   margin-bottom: 15px; 
 }
@@ -1013,7 +1057,7 @@ a:focus {
 
 /* Start Price-Section */
 .chart {
-  border: 5px solid #8a2be2; 
+  border: 5px solid #842096; 
   padding: 10px;
   border-radius: 10px; 
   margin-bottom: 35px;
@@ -1024,7 +1068,7 @@ a:focus {
 }
 .tittle_chart {
   margin-bottom: 20px; 
-  border-bottom: 5px solid #7335B7; 
+  border-bottom: 5px solid #842096; 
   padding-bottom: 5px; 
 }
 .btn-primary {
@@ -1040,8 +1084,8 @@ a:focus {
 
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #5a2a8f;
-  border: 1px solid #5a2a8f;
+  background-color: #842096;
+  border: 1px solid #842096;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -1082,7 +1126,10 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #f8842b;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 5px; 
 }
 
 .info_section .info_social {
@@ -1109,7 +1156,10 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #f8842b;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 5px; 
 }
 
 .info_section .info_links {
@@ -1136,7 +1186,10 @@ a:focus {
         }
         
         .info_section .info_links a:hover {
-          color: #f8842b;
+          color: white;
+          text-decoration: underline;
+          text-decoration-color: white;
+          text-underline-offset: 5px; 
         }
         
         .info_section form input {
