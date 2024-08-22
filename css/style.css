@@ -440,7 +440,7 @@ a:focus {
 }
 
 #goToTopBtn a {
-  background-color: #842096; 
+  background-color: #FF760D; 
   color: #ffffff;
   width: 60px;
   height: 60px;
@@ -853,7 +853,7 @@ a:focus {
 .client_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #f8842b;
+  background-color: #FF760D;
 }
 /* End Client-Section */
 
@@ -966,6 +966,9 @@ a:focus {
   color: #ffffff;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+          background-color:  #FF760D;
+          border: 1px solid  #FF760D;
+       
 }
 
 .contact_section .map_container {
@@ -1080,6 +1083,7 @@ a:focus {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #5a2a8f;
+  text-decoration: none; 
 }
 
 .btn-primary:hover {
@@ -1088,6 +1092,11 @@ a:focus {
   border: 1px solid #842096;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+} 
+.btn-primary:visited {
+  color: #ffffff; 
+  background-color: #5a2a8f; 
+  border: 1px solid #5a2a8f; 
 }
 /* End Price-Section */
 
