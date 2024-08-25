@@ -11,7 +11,7 @@ html, body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 70px 0;
 }
 
 .layout_margin {
@@ -253,18 +253,18 @@ a:focus {
 }
 
 .quote_btn-container a:hover {
-  color: #f8842b;
+  color: #FF760D;
 }
 
 .quote_btn-container .quote_btn {
   display: inline-block;
   padding: 5px 25px;
-  background-color: #FFA500;
+  background-color: #FF760D;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #FFA500;
+  border: 1px solid #FF760D;
 }
 
 .quote_btn-container .quote_btn:hover {
@@ -390,7 +390,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 23px;
   height: 23px;
-  background-color: #CC5500;
+  background-color: #FF760D;
 }
 /* Start Responsive Slider-Section */
 @media (max-width: 768px) {
@@ -696,12 +696,12 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f8842b;
+  background-color: #FF760D;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #f8842b;
+  border: 1px solid #FF760D;
   margin-top: 15px;
 }
 
@@ -1232,12 +1232,12 @@ a:focus {
           text-align: center;
           display: inline-block;
           padding: 10px 55px;
-          background-color: #f8842b;
+          background-color: #FF760D;
           color: #ffffff;
           border-radius: 0;
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
-          border: 1px solid #f8842b;
+          border: 1px solid #FF760D;
           margin-top: 15px;
         }
         
