@@ -146,8 +146,10 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #000000;
-  background-color: #ffffff;
+  background-color: transparent; 
+  text-decoration: underline; 
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 7px; 
 }
 
 .custom_nav-container .navbar-toggler {
@@ -441,7 +443,7 @@ a:focus {
 }
 
 #goToTopBtn a {
-  background-color: #8D51CD; 
+  background-color: #6E32AE; 
   color: #ffffff;
   width: 60px;
   height: 60px;
