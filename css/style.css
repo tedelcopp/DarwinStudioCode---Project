@@ -19,7 +19,7 @@ html, body {
 }
 
 .layout_padding2 {
-  padding: 75px 0;
+  padding: 45px 0;
 }
 
 .layout_padding2-top {
@@ -732,9 +732,14 @@ a:focus {
 .case_section .box {
   margin-top: 45px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   text-align: center;
+  min-height: 450px; 
+}
+
+.case_section .box .detail-box {
+  padding: 25px;
+  min-height: 200px; 
 }
 
 .case_section .box .img-box {
