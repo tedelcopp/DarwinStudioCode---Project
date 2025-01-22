@@ -488,7 +488,7 @@ a:focus {
 /* Start Responsive WhatsApp and GoToTop Button */
 @media (max-width: 767px) {
   .whatsapp-btn {
-    background-color: #128C7E; 
+    background-color: #25D366; 
     color: white; 
     font-size: 20px; 
     width: 50px; 
@@ -497,7 +497,7 @@ a:focus {
     bottom: 70px; 
   }
   .whatsapp-btn:active {
-    background-color: #128C7E; 
+    background-color: #25D366; 
   }
   #goToTopBtn a {
     background-color: #842096; 
