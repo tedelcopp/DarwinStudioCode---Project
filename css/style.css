@@ -255,18 +255,18 @@ a:focus {
 }
 
 .quote_btn-container a:hover {
-  color: #FF760D;
+  color: #f1c100;
 }
 
 .quote_btn-container .quote_btn {
   display: inline-block;
   padding: 5px 25px;
-  background-color: #FF760D;
+  background-color: #f1c100;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #FF760D;
+  border: 1px solid #f1c100;
 }
 
 .quote_btn-container .quote_btn:hover {
@@ -393,7 +393,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 23px;
   height: 23px;
-  background-color: #FF760D;
+  background-color: #f1c100;
 }
 /* Start Responsive Slider-Section */
 @media (max-width: 768px) {
@@ -468,7 +468,7 @@ a:focus {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #128C7E; 
+  background-color: #25D366; 
   color: white;
   width: 60px;
   height: 60px;
@@ -699,12 +699,12 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #FF760D;
+  background-color: #f1c100;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #FF760D;
+  border: 1px solid #f1c100;
   margin-top: 15px;
 }
 
@@ -861,7 +861,7 @@ a:focus {
 .client_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #FF760D;
+  background-color: #f1c100;
 }
 /* End Client-Section */
 
@@ -974,8 +974,8 @@ a:focus {
   color: #ffffff;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-          background-color:  #FF760D;
-          border: 1px solid  #FF760D;
+          background-color:  #f1c100;
+          border: 1px solid  #f1c100;
        
 }
 
