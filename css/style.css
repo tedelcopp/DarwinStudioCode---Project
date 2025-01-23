@@ -488,7 +488,7 @@ a:focus {
 /* Start Responsive WhatsApp and GoToTop Button */
 @media (max-width: 767px) {
   .whatsapp-btn {
-    background-color: #128C7E; 
+    background-color: #25D366; 
     color: white; 
     font-size: 20px; 
     width: 50px; 
@@ -497,7 +497,7 @@ a:focus {
     bottom: 70px; 
   }
   .whatsapp-btn:active {
-    background-color: #128C7E; 
+    background-color: #25D366; 
   }
   #goToTopBtn a {
     background-color: #842096; 
@@ -836,11 +836,11 @@ a:focus {
 }
 
 .client_section .carousel-indicators {
-  position: relative; /* Cambiado a relativo */
-  z-index: 10; /* Asegura que los indicadores estén sobre otros elementos */
+  position: relative; 
+  z-index: 10; 
   margin: 0;
-  margin-bottom: -95px; /* Ajusta este valor según el espacio que desees */
-  top: -115px; /* Ajusta la posición en lugar de usar margin-top */
+  margin-bottom: -95px; 
+  top: -115px; 
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1239,12 +1239,12 @@ a:focus {
           text-align: center;
           display: inline-block;
           padding: 10px 55px;
-          background-color: #FF760D;
+          background-color: #f1c100;
           color: #ffffff;
           border-radius: 0;
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
-          border: 1px solid #FF760D;
+          border: 1px solid #f1c100;
           margin-top: 15px;
         }
         
